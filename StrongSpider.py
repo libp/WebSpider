@@ -18,8 +18,8 @@ def spiderIt():
      webname="sina"
      #decode("unicode-escape") 将输出的unicode字典转换成汉字
      # print(getArticle(url).decode("unicode-escape"))
-     dict = getArticle(url,webname)
-     data = json.loads(dict)
+     data = getArticle(url,webname)
+     # data = json.loads(dict)
      try:
          result = cur.execute(sqli,(data['title'],data['author'],data['article'],data['published_time'],data['url'],data['webname']))
          print result
@@ -49,10 +49,9 @@ def getArticle(url,webname):
     published_time = soup.find(property="article:published_time")['content'];
     #2017-06-03T11:31:53+08:00   这种时间格式叫UTC时间格式...很恶心
     # print(published_time)
-    LOCAL_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
-    datetime.datetime.strptime(published_time, LOCAL_FORMAT)
+    UTC_FORMAT = "%Y-%m-%dT%H:%M:%S+08:00"
+    dict['published_time'] = datetime.datetime.strptime(published_time, UTC_FORMAT)
 
-    dict['published_time'] = published_time.strftime(LOCAL_FORMAT)
     #获取作者
     author = soup.find(property="article:author")['content'];
     # print(author)
@@ -74,8 +73,10 @@ def getArticle(url,webname):
         article += str(child)
     # print(article)
     dict['article'] = article
-
-    return json.dumps(dict)
+    # print json.dumps(dict)
+    # date在转换成json的时候包括，需要重构date转换的函数
+    # return json.dumps(dict)
+    return dict
 
 def getConn():
      conn= MySQLdb.connect(
