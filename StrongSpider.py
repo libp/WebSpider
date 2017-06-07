@@ -9,12 +9,11 @@ from urllib2 import urlopen,HTTPError
 import MySQLdb
 import json
 import datetime
+import logging
 
-
-def spiderIt():
+def spiderSina():
      conn = getConn();
      cur = conn.cursor()
-     sqli="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname) values (%s,%s,%s,%s,%s,%s,%s)"
 
      # url="http://tech.sina.com.cn/d/s/2017-06-03/doc-ifyfuzny2810237.shtml"
      url="http://tech.sina.com.cn/it/2017-06-07/doc-ifyfuzny3756083.shtml"
@@ -24,11 +23,18 @@ def spiderIt():
      data = getSinaArticle(url,webname)
 
      try:
-         #TODO  入库之前判断url是否已经存在数据库中了
+         #入库之前判断url是否已经存在数据库中了
+         sqlQueryUrl="select count(*) from tbl_peng_article where url='%s'"%data['url']
+         queryUrlReuslt = cur.execute(sqlQueryUrl)
+         if( queryUrlReuslt > 0 ):
 
-         result = cur.execute(sqli,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname']))
-
-         print result
+             #TODO  配置日志打印位置
+             logging.info("URL already in database")
+         else:
+             sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname) values (%s,%s,%s,%s,%s,%s,%s)"
+             result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname']))
+             if ( result > 0 ):
+                 logging.info("insert success")
          conn.commit()
      except MySQLdb.Error,e:
          print "Mysql Error %d: %s" % (e.args[0], e.args[1])
@@ -111,7 +117,7 @@ def getConn():
      return conn
 
 
-spiderIt()
+spiderSina()
 
 
 
