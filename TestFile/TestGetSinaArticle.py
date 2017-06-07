@@ -1,39 +1,9 @@
-# -*- coding: utf-8 -*-
-
-
+# -*- coding: utf-8 -*- 
 __author__ = 'Peng'
-from bs4 import BeautifulSoup,Comment
-from urllib2 import urlopen,HTTPError
-import MySQLdb
 import json
 import datetime
-
-
-def spiderIt():
-     conn = getConn();
-     cur = conn.cursor()
-     sqli="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname) values (%s,%s,%s,%s,%s,%s,%s)"
-
-     # url="http://tech.sina.com.cn/d/s/2017-06-03/doc-ifyfuzny2810237.shtml"
-     url="http://tech.sina.com.cn/it/2017-06-07/doc-ifyfuzny3756083.shtml"
-     webname="sina"
-     #decode("unicode-escape") 将输出的unicode字典转换成汉字
-     # print(getArticle(url).decode("unicode-escape"))
-     data = getSinaArticle(url,webname)
-     # data = json.loads(dict)
-     try:
-         #TODO  入库之前判断url是否已经存在数据库中了
-
-         result = cur.execute(sqli,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname']))
-
-         print result
-         conn.commit()
-     except MySQLdb.Error,e:
-         print "Mysql Error %d: %s" % (e.args[0], e.args[1])
-     cur.close()
-     conn.close()
-
-
+from bs4 import BeautifulSoup,Comment
+from urllib2 import urlopen,HTTPError
 def getSinaArticle(url,webname):
     #创建字典用来储存函数的返回结果
     dict={'url':url,'title':'','published_time':'','getTime':'','author':'','article':'','webname':webname}
@@ -49,7 +19,6 @@ def getSinaArticle(url,webname):
     #去除html注释
     for element in soup(text=lambda text: isinstance(text, Comment)):
         element.extract()
-
     #获取标题
     title = soup.find(id="main_title").get_text();
     # print(title)
@@ -80,7 +49,7 @@ def getSinaArticle(url,webname):
     article =""
     for child in paragraph:
         article += str(child)
-    # print(article)
+    print(article)
     dict['article'] = article
     # print json.dumps(dict)
     # date在转换成json的时候包括，需要重构date转换的函数
@@ -88,21 +57,8 @@ def getSinaArticle(url,webname):
 
     #文章抓取时间
     dict['getTime']=str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-    return dict
+    return None
 
-def getConn():
-     conn= MySQLdb.connect(
-        host='localhost',
-        port = 3306,
-        user='root',
-        passwd='root',
-        db ='nichuiniu',
-        charset='utf8',
-        )
-     return conn
-
-
-spiderIt()
-
-
-
+url="http://tech.sina.com.cn/it/2017-06-07/doc-ifyfuzny3756083.shtml"
+webname="sina"
+getSinaArticle(url,webname)

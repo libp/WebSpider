@@ -3,8 +3,8 @@ __author__ = 'Peng'
 import time
 import datetime
 import random
-datetime.datetime.now()
-time.localtime()
+# datetime.datetime.now()
+# time.localtime()
 createTime=str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 print createTime
 print(datetime.datetime.now())
