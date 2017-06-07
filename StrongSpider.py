@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
 
+
 __author__ = 'Peng'
 from bs4 import BeautifulSoup,Comment
+import urllib2
 from urllib2 import urlopen,HTTPError
 import MySQLdb
 import json
@@ -20,7 +22,7 @@ def spiderIt():
      #decode("unicode-escape") 将输出的unicode字典转换成汉字
      # print(getArticle(url).decode("unicode-escape"))
      data = getSinaArticle(url,webname)
-     # data = json.loads(dict)
+
      try:
          #TODO  入库之前判断url是否已经存在数据库中了
 
@@ -37,10 +39,17 @@ def spiderIt():
 def getSinaArticle(url,webname):
     #创建字典用来储存函数的返回结果
     dict={'url':url,'title':'','published_time':'','getTime':'','author':'','article':'','webname':webname}
+
+    #创建请求头
+    headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36",
+             "Accept":"*/*"}
+
     #打开网页
     try:
         dict['url']=url
-        html = urlopen(url)
+        request = urllib2.Request(url,headers=headers)
+        html = urlopen(request)
     except HTTPError as e:
         print(e)
     #读取网页内容并转换成树形文档结构

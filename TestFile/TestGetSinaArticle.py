@@ -1,20 +1,32 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
+
+
 __author__ = 'Peng'
 import json
 import datetime
+import requests
 from bs4 import BeautifulSoup,Comment
+import urllib2
 from urllib2 import urlopen,HTTPError
 def getSinaArticle(url,webname):
     #创建字典用来储存函数的返回结果
     dict={'url':url,'title':'','published_time':'','getTime':'','author':'','article':'','webname':webname}
+
+    #创建请求头
+    headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36",
+             "Accept":"*/*"}
     #打开网页
     try:
         dict['url']=url
-        html = urlopen(url)
+        request = urllib2.Request(url,headers=headers)
+        html = urlopen(request)
     except HTTPError as e:
         print(e)
     #读取网页内容并转换成树形文档结构
     soup = BeautifulSoup(html.read(),"lxml")
+
+    #TODO 想办法清除新浪财经的股市链接
 
     #去除html注释
     for element in soup(text=lambda text: isinstance(text, Comment)):
