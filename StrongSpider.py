@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-
-
-
 __author__ = 'Peng'
 from bs4 import BeautifulSoup,Comment
 import urllib2
@@ -10,6 +7,13 @@ import MySQLdb
 import json
 import datetime
 import logging
+import sys
+
+#配置日志输出位置为控制台
+logging.basicConfig(level=logging.DEBUG,
+                format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                datefmt='%a, %d %b %Y %H:%M:%S',
+                stream=sys.stdout)
 
 def spiderSina():
      conn = getConn();
@@ -27,8 +31,6 @@ def spiderSina():
          sqlQueryUrl="select count(*) from tbl_peng_article where url='%s'"%data['url']
          queryUrlReuslt = cur.execute(sqlQueryUrl)
          if( queryUrlReuslt > 0 ):
-
-             #TODO  配置日志打印位置
              logging.info("URL already in database")
          else:
              sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname) values (%s,%s,%s,%s,%s,%s,%s)"
