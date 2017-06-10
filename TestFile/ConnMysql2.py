@@ -6,12 +6,12 @@ conn= MySQLdb.connect(
         port = 3306,
         user='root',
         passwd='root',
-        db ='test',
+        db ='nichuiniu',
         )
 cur = conn.cursor()
 
 #创建数据表
-cur.execute("create table student(id int ,name varchar(20),class varchar(30),age varchar(10))")
+# cur.execute("create table student(id int ,name varchar(20),class varchar(30),age varchar(10))")
 
 #插入一条数据
 #cur.execute("insert into student values('2','Tom','3 year 2 class','9')")
@@ -22,6 +22,15 @@ cur.execute("create table student(id int ,name varchar(20),class varchar(30),age
 
 #删除查询条件的数据
 #cur.execute("delete from student where age='9'")
+
+
+#查询条数
+sqlQueryUrl="select * from tbl_peng_article where url='1'"
+result = cur.execute(sqlQueryUrl)
+print str(result)
+print result
+
+
 
 cur.close()
 conn.commit()
