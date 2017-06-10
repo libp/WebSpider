@@ -12,6 +12,7 @@ import logging
 import sys
 import re
 import time
+import random
 
 #配置日志输出位置为控制台
 logging.basicConfig(level=logging.DEBUG,
@@ -167,7 +168,10 @@ def GOSina(url,webname):
     conn.close()
     #如果不为空就返回最后一个url，为空则停止抓取
     if L:
-        return L[-1]
+        # return L[-1]
+        #改为随机选择一个
+        return L[random.randint(0,len(L))-1]
+
     else:
         return 0
 

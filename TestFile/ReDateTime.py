@@ -3,6 +3,7 @@ __author__ = 'Peng'
 import urllib2
 import re
 import codecs
+import random
 
 
 href = 'http://tech.sina.com.cn/d/a/2017-05-22/doc-ifyfkqks4409930.shtml'
@@ -26,8 +27,12 @@ if match:
     # 使用Match获得分组信息
     print match.group(4)
 
-L = []
+L = [1,2,3,4]
+
+length = len(L)
+print length
+print random.randint(0,length-1)
 if L:
-    print "xx"
+    print L[random.randint(0,length)-1]
 else:
     print "yy"
