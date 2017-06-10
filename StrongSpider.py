@@ -24,33 +24,19 @@ def spiderSinaTech(url,webname):
      conn = getConn();
      cur = conn.cursor()
 
-     # url="http://tech.sina.com.cn/d/s/2017-06-03/doc-ifyfuzny2810237.shtml"
-     # url="http://tech.sina.com.cn/it/2017-06-07/doc-ifyfuzny3756083.shtml"
-     # webname="sina"
-     #decode("unicode-escape") 将输出的unicode字典转换成汉字
-     # print(getArticle(url).decode("unicode-escape"))
      data = getSinaArticle(url,webname)
-
+     if (data == None):
+         #不能解析目标网页
+         return -1
      try:
-         #入库之前判断url是否已经存在数据库中了
-         sqlQueryUrl="select * from tbl_peng_article where url='%s'"%data['url']
-         queryUrlReuslt = cur.execute(sqlQueryUrl)
-         if( queryUrlReuslt > 0 ):
-             logging.info("URL already in database")
-         else:
-             sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname) values (%s,%s,%s,%s,%s,%s,%s)"
-             result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname']))
-             if ( result > 0 ):
-                 # logging.info("insert success url is %s"%data['url'])
-                 conn.commit()
-                 cur.close()
-                 conn.close()
-                 return result
+         sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname) values (%s,%s,%s,%s,%s,%s,%s)"
+         result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname']))
      except MySQLdb.Error,e:
          print "Mysql Error %d: %s" % (e.args[0], e.args[1])
+     conn.commit()
      cur.close()
      conn.close()
-     return 0
+     return result
 
 
 def getSinaArticle(url,webname):
@@ -79,10 +65,14 @@ def getSinaArticle(url,webname):
     #过滤JavaScript
     [s.extract() for s in soup('script')]
 
-    #获取标题
-    title = soup.find(id="main_title").get_text();
-    # print(title)
-    dict['title'] = title
+    try:
+        #获取标题
+        title = soup.find(id="main_title").get_text();
+        # print(title)
+        dict['title'] = title
+    except:
+        return None
+
     #获取发布时间
     published_time = soup.find(property="article:published_time")['content'];
     #2017-06-03T11:31:53+08:00   这种时间格式叫UTC时间格式...很恶心
@@ -151,29 +141,42 @@ def GOSina(url,webname):
     soup = BeautifulSoup(html.read(),"lxml")
     conn = getConn();
     cur = conn.cursor()
+    #声明一个数组用来存储入库的文章链接
+    L = []
     for link in soup.findAll("a",href=re.compile(r'(.*?)(tech)(.*?)(\d{4}-\d{2}-\d{2})(/doc-ify)')):
-    # for link in soup.findAll("a",href=re.compile(r'\d{4}-\d{2}-\d{2}')):
-    #     print link
+
         if 'href' in link.attrs:
-            sqlQueryUrl="select * from tbl_peng_article where url='%s'"%link.attrs['href']
+            #提取href中的url，并规范格式去除分页参数
+            xurl = re.compile(r'(.*?shtml)').search(link.attrs['href']).group(1)
+            sqlQueryUrl="select * from tbl_peng_article where url='%s'"%xurl
             # print link.attrs['href']
             result = cur.execute(sqlQueryUrl)
-            if ( result < 1 ):
+            conn.commit()
+            if ( result == 0 ):
                 # data = getSinaArticle(url,webname)
-                rs = spiderSinaTech(link.attrs['href'],webname)
+                rs = spiderSinaTech(xurl,webname)
                 if( rs > 0 ):
-                    logging.info("the %s has insert into database"%link.attrs['href'])
-                    time.sleep( 5 )
-            else:
-                logging.info("URL already in database %s"%link.attrs['href'])
-
+                    logging.info("----URL has insert into database :%s"%xurl)
+                    L.append(xurl)
+                    time.sleep( 2 )
+                elif( rs == -1):
+                    logging.info("****URL content cannt be understand %s"%xurl)
+            else :
+                logging.info("&&&&URL already in database %s"%xurl)
     cur.close()
     conn.close()
-    return None
+    #如果不为空就返回最后一个url，为空则停止抓取
+    if L:
+        return L[-1]
+    else:
+        return 0
 
 logging.info("begin spider sina tech")
 url="http://tech.sina.com.cn/it/2017-06-07/doc-ifyfuzny3756083.shtml"
 webname="sina"
-GOSina(url,webname)
+x = GOSina(url,webname)
+if x!= 0:
+    GOSina(x,webname)
+
 logging.info("end spider sina tech")
 

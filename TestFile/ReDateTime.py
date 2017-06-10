@@ -25,3 +25,9 @@ match = pattern.search(xx)
 if match:
     # 使用Match获得分组信息
     print match.group(4)
+
+L = []
+if L:
+    print "xx"
+else:
+    print "yy"
