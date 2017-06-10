@@ -55,56 +55,58 @@ def getSinaArticle(url,webname):
         html = urlopen(request)
     except HTTPError as e:
         print(e)
-    #读取网页内容并转换成树形文档结构
-    soup = BeautifulSoup(html.read(),"lxml")
 
-    #去除html注释
-    for element in soup(text=lambda text: isinstance(text, Comment)):
-        element.extract()
-
-    #过滤JavaScript
-    [s.extract() for s in soup('script')]
-
+    #解析内容时如果有异常就捕获并返回空
     try:
+        #读取网页内容并转换成树形文档结构
+        soup = BeautifulSoup(html.read(),"lxml")
+
+        #去除html注释
+        for element in soup(text=lambda text: isinstance(text, Comment)):
+            element.extract()
+
+        #过滤JavaScript
+        [s.extract() for s in soup('script')]
+
         #获取标题
         title = soup.find(id="main_title").get_text();
         # print(title)
         dict['title'] = title
+
+
+        #获取发布时间
+        published_time = soup.find(property="article:published_time")['content'];
+        #2017-06-03T11:31:53+08:00   这种时间格式叫UTC时间格式...很恶心
+        # print(published_time)
+        UTC_FORMAT = "%Y-%m-%dT%H:%M:%S+08:00"
+        dict['published_time'] = datetime.datetime.strptime(published_time, UTC_FORMAT)
+
+        #获取作者
+        author = soup.find(property="article:author")['content'];
+        # print(author)
+        dict['author'] = author
+
+        #获取文章主体
+        content = soup.find(id="artibody");
+        img = content.find_all(class_="img_wrapper")
+        #删除文档书中图片标签
+        for del_img in img:
+            del_img.decompose()
+
+        #获取文章主体各个段落
+        paragraph = soup.find(id="artibody").contents;
+
+        #最终入库的文章内容
+        article =""
+        for child in paragraph:
+            article += str(child)
+        dict['article'] = article
+
+        #文章抓取时间
+        dict['getTime']=str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
     except:
         return None
-
-    #获取发布时间
-    published_time = soup.find(property="article:published_time")['content'];
-    #2017-06-03T11:31:53+08:00   这种时间格式叫UTC时间格式...很恶心
-    # print(published_time)
-    UTC_FORMAT = "%Y-%m-%dT%H:%M:%S+08:00"
-    dict['published_time'] = datetime.datetime.strptime(published_time, UTC_FORMAT)
-
-    #获取作者
-    author = soup.find(property="article:author")['content'];
-    # print(author)
-    dict['author'] = author
-
-    #获取文章主体
-    content = soup.find(id="artibody");
-    img = content.find_all(class_="img_wrapper")
-    #删除文档书中图片标签
-    for del_img in img:
-        del_img.decompose()
-
-    #获取文章主体各个段落
-    paragraph = soup.find(id="artibody").contents;
-
-    #最终入库的文章内容
-    article =""
-    for child in paragraph:
-        article += str(child)
-    # print(article)
-    dict['article'] = article
-    # print json.dumps(dict)
-
-    #文章抓取时间
-    dict['getTime']=str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     return dict
 
 def getConn():
@@ -147,7 +149,7 @@ def GOSina(url,webname):
             #提取href中的url，并规范格式去除分页参数
             xurl = re.compile(r'(.*?shtml)').search(link.attrs['href']).group(1)
             sqlQueryUrl="select * from tbl_peng_article where url='%s'"%xurl
-            # print link.attrs['href']
+            # print xurl
             result = cur.execute(sqlQueryUrl)
             conn.commit()
             if ( result == 0 ):
@@ -170,7 +172,7 @@ def GOSina(url,webname):
         return 0
 
 logging.info("begin spider sina tech")
-url="http://tech.sina.com.cn/it/2017-06-07/doc-ifyfuzny3756083.shtml"
+url="http://tech.sina.com.cn/"
 webname="sina"
 x = GOSina(url,webname)
 if x!= 0:
