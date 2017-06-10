@@ -102,8 +102,6 @@ def getSinaArticle(url,webname):
     # print(article)
     dict['article'] = article
     # print json.dumps(dict)
-    # date在转换成json的时候包括，需要重构date转换的函数
-    # return json.dumps(dict)
 
     #文章抓取时间
     dict['getTime']=str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
