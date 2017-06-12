@@ -8,4 +8,5 @@ def getConfig():
     config.readfp(open("config.ini"), "r")
     print config.get("mysql", "port")
 
+
 getConfig()
