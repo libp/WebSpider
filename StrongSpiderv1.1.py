@@ -47,7 +47,9 @@ def getSinaArticle(url,webname):
     #创建请求头
     headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 "
                           "(KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36",
-             "Accept":"*/*"}
+             "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+             "Accept-Language":"zh-CN,zh;q=0.8,en;q=0.6",
+             "Referer":"https://www.baidu.com/s?ie=UTF-8&wd=sina"}
 
     #打开网页
     try:
@@ -144,7 +146,7 @@ def GOSina(url,webname):
     cur = conn.cursor()
     #声明一个数组用来存储入库的文章链接
     L = []
-    for link in soup.findAll("a",href=re.compile(r'(.*?)(tech)(.*?)(\d{4}-\d{2}-\d{2})(/doc-ify)')):
+    for link in soup.findAll("a",href=re.compile(r'(.*?)(news)(.*?)(\d{4}-\d{2}-\d{2})(/doc-ify)')):
 
         if 'href' in link.attrs:
             #提取href中的url，并规范格式去除分页参数
@@ -175,8 +177,8 @@ def GOSina(url,webname):
     else:
         return 0
 
-logging.info("begin spider sina tech")
-url="http://tech.sina.com.cn/"
+logging.info("begin spider sina news")
+url="http://news.sina.com.cn/c/2017-06-10/doc-ifyfzhpq6544263.shtml"
 webname="sina"
 x = GOSina(url,webname)
 if x!= 0:
@@ -184,3 +186,4 @@ if x!= 0:
 
 logging.info("end spider sina tech")
 
+#这个爬虫我想做一些改变，遍历整个新浪news！！
