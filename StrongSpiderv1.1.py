@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
+
 __author__ = 'Peng'
 from bs4 import BeautifulSoup,Comment
 import urllib2
@@ -13,27 +14,49 @@ import sys
 import re
 import time
 import random
+import ConfigParser
 
-#配置日志输出位置为控制台
-logging.basicConfig(level=logging.DEBUG,
+# 配置日志信息 输出到控制台
+logging.basicConfig(level=logging.INFO,
                 format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                 datefmt='%a, %d %b %Y %H:%M:%S',
                 stream=sys.stdout)
 
+# 用于判断标题是否符合要求
+def judgeTitle(title):
+    if(title == None):
+        return None
+    patternChina = re.compile(u'[一二三四五六七八九十]+')
+    patternArabic = re.compile(r'\d+')
+    matchChina = patternChina.search(u''+title)
+    matchArabic = patternArabic.search(title)
+    if (matchChina!=None) | (matchArabic!=None):
+        logging.debug("the article title is pattern")
+        return True
+    else:
+        logging.debug("the article title not pattern")
+        return None
 
 def spiderSinaTech(url,webname):
      conn = getConn();
      cur = conn.cursor()
 
      data = getSinaArticle(url,webname)
+
      if (data == None):
          #不能解析目标网页
          return -1
+
      try:
-         sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname) values (%s,%s,%s,%s,%s,%s,%s)"
-         result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname']))
+         sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname,isuse) values (%s,%s,%s,%s,%s,%s,%s,%s)"
+         #判断文章标
+         if( judgeTitle(data['title']) == None ):
+            data['article']=""
+            result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname'],2))
+         else:
+            result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname'],0))
      except MySQLdb.Error,e:
-         print "Mysql Error %d: %s" % (e.args[0], e.args[1])
+         logging.info("Mysql Error %d: %s" % (e.args[0], e.args[1]))
      conn.commit()
      cur.close()
      conn.close()
@@ -113,13 +136,16 @@ def getSinaArticle(url,webname):
     return dict
 
 def getConn():
+     #TODO  每次连数据库都要读配置文件 浪费性能
+     config = ConfigParser.ConfigParser()
+     config.readfp(open("config.ini"), "r")
      conn= MySQLdb.connect(
-        host='localhost',
-        port = 3306,
-        user='root',
-        passwd='root',
-        db ='nichuiniu',
-        charset='utf8',
+        host = config.get("mysql", "ip"),
+        port = int(config.get("mysql", "port")),
+        user = config.get("mysql", "user"),
+        passwd = config.get("mysql", "passwd"),
+        db = config.get("mysql", "db"),
+        charset = config.get("mysql", "charset"),
         )
      return conn
 
@@ -146,7 +172,7 @@ def GOSina(url,webname):
     cur = conn.cursor()
     #声明一个数组用来存储入库的文章链接
     L = []
-    for link in soup.findAll("a",href=re.compile(r'(.*?)(news)(.*?)(\d{4}-\d{2}-\d{2})(/doc-ify)')):
+    for link in soup.findAll("a",href=re.compile(r'(.*?)(tech)(.*?)(\d{4}-\d{2}-\d{2})(/doc-ify)')):
 
         if 'href' in link.attrs:
             #提取href中的url，并规范格式去除分页参数
@@ -178,7 +204,7 @@ def GOSina(url,webname):
         return 0
 
 logging.info("begin spider sina news")
-url="http://news.sina.com.cn/c/2017-06-10/doc-ifyfzhpq6544263.shtml"
+url="http://tech.sina.com.cn/"
 webname="sina"
 x = GOSina(url,webname)
 if x!= 0:

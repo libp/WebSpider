@@ -1,0 +1,600 @@
+Wed, 14 Jun 2017 20:08:17 StrongSpiderv1.1.py[line:202] INFO begin spider sina news
+Wed, 14 Jun 2017 20:08:21 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:21 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:21 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:21 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:21 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:21 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:21 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0406791165069, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0403339931493, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0449505767466, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0404175317884, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0421194572033, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0426690415422, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0440924571881, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0426351687951, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0484378655494, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.0411031942492, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:21 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0443950773146, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:22 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0456931789904, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.070948566638
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0718040805417
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:22 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.0406791165069
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0403339931493
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0449505767466
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0404175317884
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0421194572033
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0426690415422
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.070948566638
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0718040805417
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0440924571881
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0426351687951
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0484378655494
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.0411031942492
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0443950773146
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0456931789904
+Wed, 14 Jun 2017 20:08:22 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0456931789904
+Wed, 14 Jun 2017 20:08:22 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-09/doc-ifyamkzq1186427.shtml
+Wed, 14 Jun 2017 20:08:22 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:22 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:22 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:22 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:22 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:22 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:22 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0406791165069, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0403339931493, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0449505767466, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0404175317884, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0421194572033, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0426690415422, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0440924571881, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0426351687951, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0484378655494, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.0411031942492, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0443950773146, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0456931789904, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.070948566638
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0718040805417
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:23 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.0406791165069
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0403339931493
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0449505767466
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0404175317884
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0421194572033
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0426690415422
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.070948566638
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0718040805417
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0440924571881
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0426351687951
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0484378655494
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.0411031942492
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0443950773146
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0456931789904
+Wed, 14 Jun 2017 20:08:23 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0456931789904
+Wed, 14 Jun 2017 20:08:23 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-09/doc-ifyamkzq1186427.shtml
+Wed, 14 Jun 2017 20:08:23 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-09/doc-ifyamkzq1185238.shtml
+Wed, 14 Jun 2017 20:08:24 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:24 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:24 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:24 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:24 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:24 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:24 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0417634480049, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0391096017488, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0422266823608, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0430030404632, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0415801827421, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0386656954966, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0452353571407, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0412889061728, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0478240177366, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.0440055287147, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0465640448349, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0447431045341, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0772004816968
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0786490245936
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:24 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.0417634480049
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0391096017488
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0422266823608
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0430030404632
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0415801827421
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0386656954966
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0772004816968
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0786490245936
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0452353571407
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0412889061728
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0478240177366
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.0440055287147
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0465640448349
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0447431045341
+Wed, 14 Jun 2017 20:08:24 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0447431045341
+Wed, 14 Jun 2017 20:08:24 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-09/doc-ifyamkzq1185238.shtml
+Wed, 14 Jun 2017 20:08:28 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:28 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:28 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:28 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:28 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:28 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:28 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:28 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0450648612106, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:28 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0371772016115, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:28 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0437261068628, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:28 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0426638954391, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:28 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0492421884152, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:28 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0409313196606, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:28 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0416637149505, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0415429560622, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0430377288148, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.0381975758496, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.04619833043, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0456961746644, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0781893066588
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0790946735673
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:29 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.0450648612106
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0371772016115
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0437261068628
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0426638954391
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0492421884152
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0409313196606
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0781893066588
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0790946735673
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0416637149505
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0415429560622
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0430377288148
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.0381975758496
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.04619833043
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0456961746644
+Wed, 14 Jun 2017 20:08:29 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0456961746644
+Wed, 14 Jun 2017 20:08:29 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-04/doc-ifyafcyw0121095.shtml
+Wed, 14 Jun 2017 20:08:29 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:29 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:29 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:29 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:29 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:29 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:29 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0450648612106, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0371772016115, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0437261068628, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0426638954391, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0492421884152, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0409313196606, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0416637149505, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0415429560622, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:29 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0430377288148, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.0381975758496, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.04619833043, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0456961746644, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0781893066588
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0790946735673
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:30 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.0450648612106
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0371772016115
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0437261068628
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0426638954391
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0492421884152
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0409313196606
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0781893066588
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0790946735673
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0416637149505
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0415429560622
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0430377288148
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.0381975758496
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.04619833043
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0456961746644
+Wed, 14 Jun 2017 20:08:30 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0456961746644
+Wed, 14 Jun 2017 20:08:30 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-04/doc-ifyafcyw0121095.shtml
+Wed, 14 Jun 2017 20:08:30 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:30 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:30 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:30 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:30 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:30 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:30 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0456351772197, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0417511930792, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.039908678091, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0499292710088, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0407333727349, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0467894386975, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0451015071331, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0469161306761, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0464976419208, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.0435712396131, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:30 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0440945113992, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.046415275157, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0719156794494
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0735090310475
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:31 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.0456351772197
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0417511930792
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.039908678091
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0499292710088
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0407333727349
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0467894386975
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0719156794494
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0735090310475
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0451015071331
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0469161306761
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0464976419208
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.0435712396131
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0440945113992
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.046415275157
+Wed, 14 Jun 2017 20:08:31 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.046415275157
+Wed, 14 Jun 2017 20:08:31 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-09/doc-ifyameqr7358969.shtml
+Wed, 14 Jun 2017 20:08:31 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:31 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:31 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:31 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:31 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:31 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:31 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0456351772197, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0417511930792, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.039908678091, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0499292710088, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0407333727349, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0467894386975, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0451015071331, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0469161306761, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0464976419208, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.0435712396131, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:31 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0440945113992, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:32 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.046415275157, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0719156794494
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0735090310475
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:32 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.0456351772197
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0417511930792
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.039908678091
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0499292710088
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0407333727349
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0467894386975
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0719156794494
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0735090310475
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0451015071331
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0469161306761
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0464976419208
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.0435712396131
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0440945113992
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.046415275157
+Wed, 14 Jun 2017 20:08:32 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.046415275157
+Wed, 14 Jun 2017 20:08:32 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/zl/2017-02-09/doc-ifyameqr7358969.shtml
+Wed, 14 Jun 2017 20:08:35 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:35 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:35 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:35 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:35 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:35 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:35 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:35 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.043958813087, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:35 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0341274108405, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:35 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0388755400315, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:35 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0472428918821, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:35 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0436207783983, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:35 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0378596102543, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0379252134953, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0440080917498, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0418945840334, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.037809085263, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0478090322556, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0751587836999
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0764620183676
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:36 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.043958813087
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0341274108405
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0388755400315
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0472428918821
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0436207783983
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0378596102543
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0751587836999
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0764620183676
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0379252134953
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0440080917498
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0418945840334
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.037809085263
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0478090322556
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:36 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:36 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/w/2017-06-10/doc-ifyfzhpq6486391.shtml
+Wed, 14 Jun 2017 20:08:36 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:36 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:36 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:36 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:36 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:36 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:36 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.043958813087, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0341274108405, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0388755400315, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0472428918821, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:36 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0436207783983, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0378596102543, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0379252134953, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0440080917498, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0418945840334, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.037809085263, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0478090322556, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0751587836999
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0764620183676
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:37 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.043958813087
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0341274108405
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0388755400315
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0472428918821
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0436207783983
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0378596102543
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0751587836999
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0764620183676
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0379252134953
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0440080917498
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0418945840334
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.037809085263
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0478090322556
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:37 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:37 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/w/2017-06-10/doc-ifyfzhpq6486391.shtml
+Wed, 14 Jun 2017 20:08:37 sjisprober.py[line:61] DEBUG SHIFT_JIS Japanese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:37 eucjpprober.py[line:62] DEBUG EUC-JP Japanese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:37 mbcharsetprober.py[line:66] DEBUG GB2312 Chinese prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:37 mbcharsetprober.py[line:66] DEBUG EUC-KR Korean prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:37 mbcharsetprober.py[line:66] DEBUG CP949 Korean prober hit error at byte 2
+Wed, 14 Jun 2017 20:08:37 mbcharsetprober.py[line:66] DEBUG Big5 Chinese prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:37 mbcharsetprober.py[line:66] DEBUG EUC-TW Taiwan prober hit error at byte 1
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.043958813087, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:37 sbcharsetprober.py[line:119] DEBUG KOI8-R confidence = 0.0341274108405, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0388755400315, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG MacCyrillic confidence = 0.0472428918821, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG IBM866 confidence = 0.0436207783983, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG IBM855 confidence = 0.0378596102543, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG ISO-8859-5 confidence = 0.0379252134953, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG windows-1251 confidence = 0.0440080917498, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG TIS-620 confidence = 0.0418945840334, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG ISO-8859-9 confidence = 0.037809085263, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 sbcharsetprober.py[line:119] DEBUG windows-1255 confidence = 0.0478090322556, below negative shortcut threshhold 0.05
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG KOI8-R not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG MacCyrillic not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG IBM866 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG IBM855 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:100] DEBUG ISO-8859-7 Greek confidence = 0.0751587836999
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:100] DEBUG windows-1253 Greek confidence = 0.0764620183676
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG ISO-8859-5 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG windows-1251 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG TIS-620 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG ISO-8859-9 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:97] DEBUG windows-1255 not active
+Wed, 14 Jun 2017 20:08:38 charsetgroupprober.py[line:100] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:271] DEBUG no probers hit minimum threshold
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG utf-8  confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG SHIFT_JIS Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG EUC-JP Japanese confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG GB2312 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG EUC-KR Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG CP949 Korean confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG Big5 Chinese confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG EUC-TW Taiwan confidence = 0.01
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG windows-1251 Russian confidence = 0.043958813087
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG KOI8-R Russian confidence = 0.0341274108405
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG ISO-8859-5 Russian confidence = 0.0388755400315
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG MacCyrillic Russian confidence = 0.0472428918821
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG IBM866 Russian confidence = 0.0436207783983
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG IBM855 Russian confidence = 0.0378596102543
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG ISO-8859-7 Greek confidence = 0.0751587836999
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG windows-1253 Greek confidence = 0.0764620183676
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG ISO-8859-5 Bulgairan confidence = 0.0379252134953
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG windows-1251 Bulgarian confidence = 0.0440080917498
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG TIS-620 Thai confidence = 0.0418945840334
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG ISO-8859-9 Turkish confidence = 0.037809085263
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0478090322556
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:280] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:38 universaldetector.py[line:285] DEBUG windows-1255 Hebrew confidence = 0.0522563840933
+Wed, 14 Jun 2017 20:08:38 StrongSpiderv1.1.py[line:188] INFO ****URL content cannt be understand http://news.sina.com.cn/w/2017-06-10/doc-ifyfzhpq6486391.shtml
+Wed, 14 Jun 2017 20:08:38 StrongSpiderv1.1.py[line:209] INFO end spider sina tech
