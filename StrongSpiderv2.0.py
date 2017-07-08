@@ -16,7 +16,7 @@ import threading
 import threading
 import Queue
 import time
-
+from time import ctime,sleep
 #获取infinity所有壁纸
 
 # 配置日志信息 输出到控制台
@@ -40,7 +40,7 @@ def getInfinity(i):
         html = urlopen(request)
         data = html.read()
         imgName = str(i)+".jpg"
-        f = open("D:\\infinity\\"+imgName, 'wb')
+        f = open("D:\\infinity2\\"+imgName, 'wb')
         f.write(data)
         print u"正在保存的图片为",imgName
         f.close()
@@ -80,11 +80,21 @@ def createThread(id,Tnum):
         threads.append(thread)
         id += 1
     # 等待所有线程完成
-    for t in threads:
-        t.join()
+    # join()方法的位置是在for循环外的，也就是说必须等待for循环里的两个进程都结束后，才去执行主进程。
+    #join（）的作用是，在子线程完成运行之前，这个子线程的父线程将一直被阻塞。
+    # for t in threads:
+    #     t.join()
+    sleep(0.5)
 
 def startDownload(l,Tnum):
     for i in range(1,l,Tnum):
         createThread(i,Tnum)
 
-startDownload(10000,100)
+startDownload(4050,5)
+
+#01
+#这并不是我想要的多线程高并发，目前只是一次起了100个进程，但是起完100个进程之后，还是要等待大约3到5秒，
+#再发起下一次请求，我想要的是它一直在发请求，一直不断的在读写下载。
+
+#02
+#在01思考的基础上，我注释掉join()方法就实现了我的目标
