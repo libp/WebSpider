@@ -82,15 +82,15 @@ def createThread(id,Tnum):
     # 等待所有线程完成
     # join()方法的位置是在for循环外的，也就是说必须等待for循环里的两个进程都结束后，才去执行主进程。
     #join（）的作用是，在子线程完成运行之前，这个子线程的父线程将一直被阻塞。
-    # for t in threads:
-    #     t.join()
-    sleep(0.5)
+    for t in threads:
+        t.join()
+    # sleep(0.5)
 
 def startDownload(l,Tnum):
     for i in range(1,l,Tnum):
         createThread(i,Tnum)
 
-startDownload(4050,5)
+startDownload(4050,100)
 
 #01
 #这并不是我想要的多线程高并发，目前只是一次起了100个进程，但是起完100个进程之后，还是要等待大约3到5秒，
@@ -98,3 +98,7 @@ startDownload(4050,5)
 
 #02
 #在01思考的基础上，我注释掉join()方法就实现了我的目标
+
+#03
+#02似乎存在连接丢失的情况，有join时能够保证下载所有的目标图片，没有join大概有1/4的连接丢失
+#所以还是加上join，等1批线程执行完再走第二批比较好
