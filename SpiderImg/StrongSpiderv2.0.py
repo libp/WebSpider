@@ -40,7 +40,7 @@ def getInfinity(i):
         html = urlopen(request)
         data = html.read()
         imgName = str(i)+".jpg"
-        f = open("D:\\infinity2\\"+imgName, 'wb')
+        f = open("D:\\infinity\\"+imgName, 'wb')
         f.write(data)
         print u"正在保存的图片为",imgName
         f.close()

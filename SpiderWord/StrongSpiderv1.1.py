@@ -28,9 +28,11 @@ def judgeTitle(title):
         return None
     patternChina = re.compile(u'[一二三四五六七八九十]+')
     patternArabic = re.compile(r'\d+')
+    patternDate = re.compile(u'[年月日周时分秒]')
     matchChina = patternChina.search(u''+title)
     matchArabic = patternArabic.search(title)
-    if (matchChina!=None) | (matchArabic!=None):
+    matchDate = patternDate.search(u''+title)
+    if ((matchChina!=None) | (matchArabic!=None))&(matchDate!=None):
         logging.debug("the article title is pattern")
         return True
     else:

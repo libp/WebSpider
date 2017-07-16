@@ -20,16 +20,18 @@ def getConfig():
 '''
 def judgeTitle():
     # title = "荣耀9发布：2999元你又多了款摄新选择"
-    title = "荣耀发布你元你又多了款摄新选择"
+    title = "荣耀发布你元你1又多了款摄新选择"
     print repr(title)
     # pattern = re.compile(u'[一二三四五六七八九十]+')  ok
     #  match = pattern.search(u''+title) ok
 
     pattern = re.compile(u'[一二三四五六七八九十]+')
     pattern2 = re.compile(r'\d+')
+    pattern3 =  re.compile(u'[年月日周时分秒]')
     match = pattern.search(u''+title)
     match2 = pattern2.search(title)
-    if (match!=None) | (match2!=None):
+    match3 = pattern3.search(u''+title)
+    if ((match!=None) | (match2!=None))&(match3!=None):
         print "that is i want!"
     else:
         print "not match"
