@@ -40,7 +40,7 @@ def judgeTitle(title):
         return None
 
 def spiderSinaTech(url,webname):
-     conn = getConn();
+     conn = getConn()
      cur = conn.cursor()
 
      data = getSinaArticle(url,webname)
@@ -50,8 +50,16 @@ def spiderSinaTech(url,webname):
          return -1
 
      try:
-         sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname,isuse) values (%s,%s,%s,%s,%s,%s,%s,%s)"
+         #判断是否为重复文章,只要前10个汉字出现过即视为重复
+         if(data['title'].decode('utf8')>10):
+             subtitle = data['title'].decode('utf8')[0:10].encode('utf8')
+             sqlQueryTitle="select count(*) from tbl_peng_article where title like '%s\%'"%subtitle
+             rs = cur.execute(sqlQueryTitle)
+             if ( rs > 0 ):
+                logging.info("****the article has in database,not need repeat add")
+
          #判断文章标
+         sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname,isuse) values (%s,%s,%s,%s,%s,%s,%s,%s)"
          if( judgeTitle(data['title']) == None ):
             data['article']=""
             result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname'],2))

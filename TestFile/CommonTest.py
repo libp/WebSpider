@@ -20,7 +20,12 @@ def getConfig():
 '''
 def judgeTitle():
     # title = "荣耀9发布：2999元你又多了款摄新选择"
-    title = "荣耀发布你元你1又多了款摄新选择"
+    title = "荣耀1发布你元你1又多了款摄新选择"
+    print len(title)
+    s = u'中文12截取'
+    print len(s)
+
+    print title.decode('utf8')[0:10].encode('utf8')
     print repr(title)
     # pattern = re.compile(u'[一二三四五六七八九十]+')  ok
     #  match = pattern.search(u''+title) ok

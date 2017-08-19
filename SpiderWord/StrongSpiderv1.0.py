@@ -144,7 +144,7 @@ def GOSina(url,webname):
         print(e)
     #读取网页内容并转换成树形文档结构
     soup = BeautifulSoup(html.read(),"lxml")
-    conn = getConn();
+    conn = getConn()
     cur = conn.cursor()
     #声明一个数组用来存储入库的文章链接
     L = []
