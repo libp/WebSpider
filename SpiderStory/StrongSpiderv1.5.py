@@ -106,7 +106,7 @@ def GO(url,webname,i):
 logging.info("begin spider  ")
 webname="xyz"
 for i in range (1,10):
-    url="http://xxxxx.com/bbs/forum-96-"+str(i)+".html"
+    url="http://xxxxx.com/xxx-"+str(i)+".html"
     x = GO(url,webname,i)
 
 logging.info("end spider  ")

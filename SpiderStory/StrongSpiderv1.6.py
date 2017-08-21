@@ -148,7 +148,7 @@ def createThread(urls,Tnum):
 logging.info("begin spider  ")
 webname="xyz"
 for i in range (1,66):
-    url="http://xxxxx.com/bbs/forum-31-"+str(i)+".html"
+    url="http://xxxxx.com/xxx-"+str(i)+".html"
     #获取所有拼装好的url
     urls = GO(url,webname,i)
     createThread(urls,len(urls))
