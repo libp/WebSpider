@@ -55,9 +55,13 @@ def spiderSinaTech(url,webname):
          if(data['title'].decode('utf8')>10):
              subtitle = data['title'].decode('utf8')[0:10].encode('utf8')
              args = '%'+subtitle+'%'
-             sqlQueryTitle="select count(*) from tbl_peng_article where title like '%s'"%args
+             #python中获取行数不需要使用count(*) 直接用*就好
+             sqlQueryTitle="select * from tbl_peng_article where title like '%s'"%args
              print sqlQueryTitle
+             #TODO 如何获取mysql的查询结果
              rs = cur.execute(sqlQueryTitle)
+             # rs = cur.fetchone()
+             # print rs
              if ( rs > 0 ):
                 logging.info("****the article has in database,not need repeat add")
 
