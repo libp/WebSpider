@@ -20,7 +20,7 @@ def getConfig():
 '''
 def judgeTitle():
     # title = "荣耀9发布：2999元你又多了款摄新选择"
-    title = "荣耀1发布你元你1又多了款摄新选择"
+    title = "预见机器人：第三届世界机器人大会展现智能时代2.0"
     print len(title)
     s = u'中文12截取'
     print len(s)
