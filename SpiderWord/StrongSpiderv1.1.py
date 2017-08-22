@@ -34,7 +34,7 @@ def judgeTitle(title):
     matchArabic = patternArabic.search(title)
     matchDate = patternDate.search(u''+title)
     if ((matchChina!=None) | (matchArabic!=None))&(matchDate!=None):
-        logging.debug("the article title is pattern")
+        logging.info("the article title is pattern,title is %s"%title)
         return True
     else:
         logging.debug("the article title not pattern")
@@ -45,7 +45,8 @@ def spiderSinaTech(url,webname):
      cur = conn.cursor()
 
      data = getSinaArticle(url,webname)
-
+     #判断文章标题是否有重复
+     repeat = 0
      if (data == None):
          #不能解析目标网页
          return -1
@@ -57,17 +58,17 @@ def spiderSinaTech(url,webname):
              args = '%'+subtitle+'%'
              #python中获取行数不需要使用count(*) 直接用*就好
              sqlQueryTitle="select * from tbl_peng_article where title like '%s'"%args
-             print sqlQueryTitle
-             #TODO 如何获取mysql的查询结果
+             # print sqlQueryTitle
              rs = cur.execute(sqlQueryTitle)
              # rs = cur.fetchone()
              # print rs
              if ( rs > 0 ):
-                logging.info("****the article has in database,not need repeat add")
+                logging.info("****the title repeat，article has in database,not need  add")
+                repeat = 1
 
          #判断文章标
          sqlInsertArticle="insert into tbl_peng_article (title,author,content,createTime,getTime,url,webname,isuse) values (%s,%s,%s,%s,%s,%s,%s,%s)"
-         if( judgeTitle(data['title']) == None ):
+         if( judgeTitle(data['title']) == None or repeat== 1 ):
             data['article']=""
             result = cur.execute(sqlInsertArticle,(data['title'],data['author'],data['article'],data['published_time'],data['getTime'],data['url'],data['webname'],2))
          else:
@@ -206,6 +207,8 @@ def GOSina(url,webname):
                     L.append(xurl)
                     time.sleep( 2 )
                 elif( rs == -1):
+                    logging.info("****URL content cannt be understand %s"%xurl)
+                elif( rs == -2):
                     logging.info("****URL content cannt be understand %s"%xurl)
             else :
                 logging.info("&&&&URL already in database %s"%xurl)
