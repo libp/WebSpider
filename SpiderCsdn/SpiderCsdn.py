@@ -79,10 +79,12 @@ def getContent(url,webname):
         [s.extract() for s in soup('script')]
 
         #获取blog_rank
-        # dict['access'] = soup.find(id="blog_rank").find_all('li')[0].span.get_text()
-        # dict['score'] = soup.find(id="blog_rank").find_all('li')[1].span.get_text()
-        # dict['ranking'] = soup.find(id="blog_rank").find_all('li')[3].span.get_text()
-        #不如直接传html过去好了
+        access = soup.find(id="blog_rank").find_all('li')[0].span.get_text()
+        score = soup.find(id="blog_rank").find_all('li')[1].span.get_text()
+        ranking = soup.find(id="blog_rank").find_all('li')[3].span.get_text()
+        logging.info("access:%s,score:%s,ranking,%s" %(access,score,ranking))
+
+        #直接传html过去
         dict['access'] = soup.find(id="blog_rank").find_all('li')[0]
         dict['score'] = soup.find(id="blog_rank").find_all('li')[1]
         dict['ranking'] = soup.find(id="blog_rank").find_all('li')[3]
@@ -113,5 +115,3 @@ mail_msg = """
 """%(dict['access'],dict['score'],dict['ranking'],str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
 SendEmail(mail_msg)
 logging.info("end spider csdn tech")
-
-#这个爬虫我想做一些改变，遍历整个新浪news！！
