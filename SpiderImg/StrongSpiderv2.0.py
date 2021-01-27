@@ -1,23 +1,12 @@
 # -*- coding: utf-8 -*- 
 __author__ = 'Peng'
-from bs4 import BeautifulSoup,Comment
 import urllib2
 from urllib2 import urlopen,HTTPError
-import MySQLdb
-import json
-import datetime
 import logging
 import sys
-import re
-import time
-import random
-import ConfigParser
 import threading
-import threading
-import Queue
-import time
 from time import ctime,sleep
-#获取infinity所有壁纸
+#获取infinity所有壁纸 适用于python2.7
 
 # 配置日志信息 输出到控制台
 logging.basicConfig(level=logging.INFO,
@@ -40,9 +29,9 @@ def getInfinity(i):
         html = urlopen(request)
         data = html.read()
         imgName = str(i)+".jpg"
-        f = open("D:\\infinity\\"+imgName, 'wb')
+        f = open("C:\\infinity\\"+imgName, 'wb')
         f.write(data)
-        print u"正在保存的图片为",imgName
+        print ("正在保存的图片为",imgName)
         f.close()
     except HTTPError as e:
         print(e)
