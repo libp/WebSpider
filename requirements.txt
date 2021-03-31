@@ -15,7 +15,7 @@ hyperlink==17.2.1
 idna==2.5
 incremental==17.5.0
 ipaddress==1.0.18
-lxml==3.8.0
+lxml==4.6.3
 numpy==1.13.3
 olefile==0.44
 parsel==1.2.0
